@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rick and Morty | Buscador de personajes</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/app.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Rick and Morty</h1>
+        <p>Explora los personajes del multiverso</p>
+    </header>
+
+    <main>
+
+        <section id="buscador">
+            <h2>Buscar personajes</h2>
+
+            <form id="formulario-busqueda">
+
+                <div>
+                    <label for="nombre">Nombre del personaje:</label>
+                    <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        placeholder="Ejemplo: Rick"
+                    >
+                </div>
+
+                <div>
+                    <label for="estado">Estado del personaje:</label>
+                    <select id="estado" name="estado">
+                        <option value="">Todos</option>
+                        <option value="alive">Vivo</option>
+                        <option value="dead">Muerto</option>
+                        <option value="unknown">Desconocido</option>
+                    </select>
+                </div>
+
+                <button type="submit" id="boton-buscar">
+                    Buscar
+                </button>
+
+            </form>
+        </section>
+
+        <section id="resultados">
+            <h2>Resultados</h2>
+
+            <p id="mensaje" aria-live="polite">
+                Busca un personaje para comenzar.
+            </p>
+
+            <div id="contenedor-personajes"></div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Trabajo Práctico - Ingeniería en Informática</p>
+        <p>Desarrollado por: Rodrigo Rojas</p>
+    </footer>
+
+</body>
+</html>

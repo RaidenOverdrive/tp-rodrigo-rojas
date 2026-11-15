@@ -1,0 +1,223 @@
+
+/* =================================
+   1. VARIABLES CSS
+================================= */
+
+:root {
+    --color-fondo: #10151c;
+    --color-panel: #1c2633;
+    --color-verde: #97ce4c;
+    --color-texto: #f5f5f5;
+    --color-secundario: #aab4c0;
+    --espacio: 20px;
+    --radio: 12px;
+}
+
+/* =================================
+   2. CONFIGURACIÓN GENERAL
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.6;
+}
+
+/* =================================
+   3. ENCABEZADO - FLEXBOX
+================================= */
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    padding: 35px var(--espacio);
+    background-color: var(--color-panel);
+    border-bottom: 3px solid var(--color-verde);
+    text-align: center;
+}
+
+header h1 {
+    color: var(--color-verde);
+    font-size: 2.5rem;
+}
+
+/* =================================
+   4. CONTENIDO PRINCIPAL
+================================= */
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+section {
+    margin-bottom: 35px;
+}
+
+h2 {
+    margin-bottom: var(--espacio);
+    color: var(--color-verde);
+}
+
+/* =================================
+   5. FORMULARIO - FLEXBOX
+================================= */
+
+#formulario-busqueda {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    gap: var(--espacio);
+
+    padding: var(--espacio);
+    background-color: var(--color-panel);
+    border-radius: var(--radio);
+}
+
+#formulario-busqueda div {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 180px;
+    gap: 8px;
+}
+
+label {
+    color: var(--color-secundario);
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #526070;
+    border-radius: 8px;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--color-verde);
+    color: #10151c;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b5e66d;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* =================================
+   6. TARJETAS - CSS GRID
+================================= */
+
+#contenedor-personajes {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fill, minmax(220px, 1fr));
+
+    gap: var(--espacio);
+}
+
+/* =================================
+   7. DISEÑO DE CADA TARJETA
+================================= */
+
+.tarjeta {
+    background-color: var(--color-panel);
+    border-radius: var(--radio);
+    overflow: hidden;
+    border: 1px solid #354354;
+}
+
+.tarjeta img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.tarjeta-contenido {
+    padding: 15px;
+}
+
+.tarjeta h3 {
+    color: var(--color-verde);
+    margin-bottom: 10px;
+}
+
+.tarjeta p {
+    color: var(--color-secundario);
+    margin-bottom: 5px;
+}
+
+/* =================================
+   8. PIE DE PÁGINA
+================================= */
+
+footer {
+    padding: 25px;
+    background-color: var(--color-panel);
+    text-align: center;
+    color: var(--color-secundario);
+}
+
+
+/* =================================
+   9. RESPONSIVE - CELULARES
+================================= */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 25px 10px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    main {
+        width: 94%;
+        margin: 20px auto;
+    }
+
+    #formulario-busqueda {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #formulario-busqueda div {
+        width: 100%;
+    }
+
+    #formulario-busqueda button {
+        width: 100%;
+    }
+
+    #contenedor-personajes {
+        grid-template-columns: 1fr;
+    }
+
+}
