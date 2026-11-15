@@ -2,9 +2,10 @@
 
 ## Información del estudiante
 
-- **Nombre:** [Rodrigo Rojas]
+- **Nombre:** Rodrigo Rojas
 - **Variante:** A — Personajes
-- **Asignatura:** [Introducción a Fundamentos del Desarrollo Web]
+- **Asignatura:** Introducción a Fundamentos del Desarrollo Web
+- **Institución:** UCSA
 
 ## Descripción del proyecto
 
@@ -12,34 +13,39 @@ Esta aplicación web permite buscar personajes de la serie *Rick and Morty* medi
 
 El usuario puede realizar búsquedas utilizando el nombre del personaje, su estado (vivo, muerto o desconocido), o ambos criterios simultáneamente.
 
-Cada resultado se presenta en una tarjeta que muestra:
-
-- Imagen del personaje.
-- Nombre.
-- Estado.
-- Especie.
-- Lugar de origen.
+Cada resultado se presenta en una tarjeta que muestra la imagen del personaje, su nombre, estado, especie y lugar de origen.
 
 La aplicación también incorpora validaciones, mensajes de carga y de error, y almacenamiento local (`localStorage`) para conservar los últimos criterios de búsqueda y restaurarlos al volver a cargar la página.
+
+## Funcionalidades
+
+- Buscar personajes por nombre.
+- Filtrar personajes según su estado: vivo, muerto o desconocido.
+- Combinar los criterios de búsqueda.
+- Visualizar los resultados mediante tarjetas individuales.
+- Mostrar imágenes e información de cada personaje.
+- Validar los datos introducidos por el usuario.
+- Mostrar mensajes de carga, error y resultados.
+- Guardar los últimos criterios de búsqueda mediante `localStorage`.
+- Restaurar los criterios de búsqueda al recargar la aplicación.
 
 ## Tecnologías utilizadas
 
 - HTML5
 - CSS3
-- JavaScript
+- JavaScript (ES6+)
 - Fetch API
 - LocalStorage
 - The Rick and Morty API
 
+## Sitios publicados
+
+- **GitHub Pages:** https://raidenoverdrive.github.io/tp-rodrigo-rojas/
+- **Vercel:** https://tp-rodrigo-rojas.vercel.app/
+
 ## Captura de pantalla
 
 ![Captura de pantalla de la aplicación](img/CAPTURA.PNG)
-
-
-## Sitios publicados
-
-- **GitHub Pages:** Pendiente de publicación.
-- **Vercel:** Pendiente de publicación.
 
 ## Estructura del proyecto
 
@@ -65,17 +71,14 @@ tp-rodrigo-rojas/
    ```
 
 2. Abrir la carpeta del proyecto en Visual Studio Code.
-3. Ejecutar `index.html` utilizando Live Server.
+3. Ejecutar `index.html` utilizando Live Server o abrirlo directamente en un navegador compatible.
 
 ## Despliegue
 
-El proyecto se publicará mediante GitHub Pages y Vercel.
+El proyecto se encuentra publicado en GitHub Pages y Vercel.
 
-Ambas plataformas estarán vinculadas al repositorio de GitHub y utilizarán la rama `main` para actualizar automáticamente la aplicación cada vez que se publiquen nuevos cambios.
+Ambas plataformas están vinculadas al repositorio de GitHub y utilizan la rama `main` como fuente de publicación.
 
-## Sitios publicados
+Los despliegues se actualizan automáticamente cada vez que se envían nuevos cambios mediante `git push`.
 
-## Sitios publicados
-
-- **GitHub Pages:** https://raidenoverdrive.github.io/tp-rodrigo-rojas/
-- **Vercel:** https://tp-rodrigo-rojas.vercel.app/
+Se verificó el funcionamiento del despliegue continuo mediante la actualización del número de versión de la aplicación, pasando de la versión 1.0 a la versión 1.1 en ambas plataformas.
