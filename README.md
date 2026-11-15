@@ -33,4 +33,4 @@ La aplicación también incorpora validaciones, mensajes de carga y de error, y 
 
 ## Captura de pantalla
 
-![Captura de pantalla de la aplicación](img/CAPTURA.png)
+![Captura de pantalla de la aplicación](img/CAPTURA.PNG)
