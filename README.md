@@ -72,3 +72,8 @@ tp-rodrigo-rojas/
 El proyecto se publicará mediante GitHub Pages y Vercel.
 
 Ambas plataformas estarán vinculadas al repositorio de GitHub y utilizarán la rama `main` para actualizar automáticamente la aplicación cada vez que se publiquen nuevos cambios.
+
+## Sitios publicados
+
+- **GitHub Pages:** https://raidenoverdrive.github.io/tp-rodrigo-rojas/
+- **Vercel:** Pendiente de publicación.
