@@ -75,5 +75,7 @@ Ambas plataformas estarán vinculadas al repositorio de GitHub y utilizarán la 
 
 ## Sitios publicados
 
+## Sitios publicados
+
 - **GitHub Pages:** https://raidenoverdrive.github.io/tp-rodrigo-rojas/
-- **Vercel:** Pendiente de publicación.
+- **Vercel:** https://tp-rodrigo-rojas.vercel.app/
